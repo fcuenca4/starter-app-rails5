@@ -38,7 +38,6 @@ end
 group :development, :test do
   gem 'byebug',   '9.0.5', platform: :mri
   gem 'sqlite3',  '1.3.11'
-
 end
 
 # Production gems
