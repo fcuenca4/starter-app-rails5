@@ -1,0 +1,46 @@
+<% provide(:title, "Edit #{resource_name.to_s.humanize}") %>
+<h1>Edit <%= resource_name.to_s.humanize %></h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put, role: 'form' }) do |f| %>
+      <%= devise_error_messages! %>
+
+      <div class="form-group">
+        <%= f.label :email, class: "control-label" %>
+        <%= f.email_field :email, class: "form-control", autofocus: true, placeholder: I18n.t("placeholders.email") %>
+      </div>
+
+      <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+      Currently waiting confirmation for: <%= resource.unconfirmed_email %>
+      <% end %>
+
+      <p>Leave these fields blank if you don't want to change your password.</p>
+
+      <div class="form-group">
+        <%= f.label :password, class: "control-label" %>
+        <%= f.password_field :password, class: "form-control", autocomplete: "off", placeholder: I18n.t("placeholders.update_password") %>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :password_confirmation, class: "control-label" %>
+        <%= f.password_field :password_confirmation, class: "form-control", autocomplete: "off", placeholder: I18n.t("placeholders.update_password_confirmation") %>
+      </div>
+
+      <p>You must enter your current password to make changes.</p>
+
+      <div class="form-group">
+        <%= f.label :current_password, class: "control-label" %>
+        <%= f.password_field :current_password, autocomplete: "off", class: "form-control", placeholder: I18n.t("placeholders.password") %>
+      </div>
+
+      <div class="form-group">
+        <%= f.submit I18n.t("labels.update_profile_submit"), class: "btn btn-large btn-primary form-control" %>
+      </div>
+    <% end %>
+
+    <h3>Cancel my account</h3>
+    <p>Unhappy? We'll be sad to see you go.</p>
+    <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: 'Are you sure?' }, method: :delete, class: 'btn btn-large btn-primary' %>
+  </div>
+</div>

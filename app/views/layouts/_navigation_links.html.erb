@@ -1,0 +1,10 @@
+<%# add navigation links to this file %>
+<li class="<%= is_active_link?(root_path) %>" ><%= link_to "Home", root_path %></li>
+<li class="<%= is_active_link?(page_path('about')) %>" ><%= link_to "About", page_path('about') %></li>
+<% if user_signed_in? %>
+  <li class="<%= is_active_link?(edit_user_registration_path) %>" ><%= link_to 'Edit account', edit_user_registration_path %></li>
+  <li><%= link_to 'Sign out', destroy_user_session_path, :method=>'delete' %></li>
+<% else %>
+  <li class="<%= is_active_link?(new_user_session_path) %>" ><%= link_to 'Log in', new_user_session_path %></li>
+  <li class="<%= is_active_link?(new_user_registration_path) %>" ><%= link_to 'Sign up', new_user_registration_path %></li>
+<% end %>

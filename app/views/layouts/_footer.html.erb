@@ -1,0 +1,12 @@
+<small class="pull-left">
+  <%= link_to Rails.application.config.application_name, root_path %> by <%= Rails.application.config.application_creator %>
+</small>
+<small class="pull-right">
+  <nav>
+    <ul class="list-inline">
+      <li><%= link_to "Contact", page_path('contact') %></li>
+      <li><%= link_to "Sitemap", page_path('sitemap') %></li>
+      <li><%= link_to "Terms", page_path('terms') %></li>
+    </ul>
+</nav>
+</small>
