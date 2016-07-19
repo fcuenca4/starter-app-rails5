@@ -20,6 +20,7 @@ gem 'uglifier',     '3.0.0'
 
 gem 'high_voltage',   '3.0.0'
 gem 'bootstrap-sass', '3.3.6'
+gem 'devise',         '4.2.0'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data',  '1.2016.6', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
