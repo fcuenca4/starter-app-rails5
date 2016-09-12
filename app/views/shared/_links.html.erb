@@ -1,0 +1,7 @@
+<% if controller_name != 'sessions' %>
+<p>Already signed up? <%= link_to "Log in", log_in_path %></p>
+<% end %>
+
+<% if controller_name != 'users' %>
+<p>New user? <%= link_to "Sign up now!", sign_up_path %></p>
+<% end %>

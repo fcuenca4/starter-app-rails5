@@ -1,0 +1,15 @@
+<%= form_for(@user, url: yield(:form_url), html: { role: 'form' }) do |f| %>
+  <%= render 'shared/error_messages', object: @user %>
+
+  <%= f.label :email %>
+  <%= f.email_field :email, class: "form-control", autofocus: true, placeholder: I18n.t("placeholders.email") %>
+
+  <%= f.label :password %>
+  <%= f.password_field :password, autocomplete: "off", class: "form-control", placeholder: yield(:password_text) %>
+
+  <%= f.label :password_confirmation %>
+  <%= f.password_field :password_confirmation, autocomplete: "off", class: "form-control", placeholder: yield(:password_confirmation_text) %>
+
+  <%= f.submit yield(:submit_text), class: "btn btn-primary" %>
+
+<% end %>

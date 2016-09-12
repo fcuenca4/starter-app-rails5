@@ -20,6 +20,9 @@
 # Ignore Byebug command history file.
 .byebug_history
 
+# Ignore Spring files.
+/spring/*.pid
+
 # Ignore other unneeded files.
 doc/
 *.swp

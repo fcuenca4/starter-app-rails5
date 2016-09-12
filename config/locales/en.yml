@@ -20,4 +20,14 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  labels:
+    log_in_submit: "Log in"
+    remember_me: "Remember Me"
+    sign_up_submit: "Sign Up"
+    edit_profile_submit: "Save Changes"
+  placeholders:
+    email: "Enter your email"
+    password: "Enter your password"
+    password_confirmation: "Re-enter your password to confirm"
+    update_password: "Enter your new password to change, otherwise keep blank"
+    update_password_confirmation: "If changing your password, re-enter your new password to confirm"
