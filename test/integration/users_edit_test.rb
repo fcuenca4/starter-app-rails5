@@ -28,12 +28,12 @@ class UsersEditTest < ActionDispatch::IntegrationTest
     assert_redirected_to edit_user_path(@user)
     email = "foo@bar.com"
     patch user_path(@user), params: { user: { email: email, password: "", password_confirmation: "" } }
-    assert_not flash.empty?
     assert_redirected_to @user
-    #assert_select "div.alert"
-    #assert_select "div.alert-success"
-    #assert_select "button.close"
-    #assert_select "div#flash_success", "Profile updated"
+    follow_redirect!
+    assert_select "div.alert"
+    assert_select "div.alert-success"
+    assert_select "button.close"
+    assert_select "div#flash_success", "Profile updated"
     @user.reload
     assert_equal email, @user.email
     assert_equal session[:forwarding_url], nil
