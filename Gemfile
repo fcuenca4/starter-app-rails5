@@ -29,7 +29,7 @@ gem 'bootstrap-will_paginate',  '0.0.10'
 # Development & testing specific gems
 
 group :development, :test do
-  gem 'byebug',   '9.0.5', platform: :mri
+  gem 'byebug',   '9.0.6', platform: :mri
   gem 'sqlite3',  '1.3.11'
 end
 
@@ -41,6 +41,6 @@ end
 # Production gems
 
 group :production do
-  gem 'passenger',  '5.0.29'
-  gem 'pg',         '0.18.4'
+  gem 'passenger',  '5.0.30'
+  gem 'pg',         '0.19.0'
 end
