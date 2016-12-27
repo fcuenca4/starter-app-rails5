@@ -183,7 +183,7 @@ DEPENDENCIES
   bootstrap-will_paginate (= 0.0.10)
   byebug (= 9.0.6)
   coffee-rails (= 4.2.1)
-  forest_liana
+  forest_liana (= 1.5.1)
   high_voltage (= 3.0.0)
   jbuilder (= 2.6.1)
   jquery-rails (= 4.2.1)

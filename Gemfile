@@ -30,6 +30,7 @@ gem 'bootstrap-sass',           '3.3.7'
 gem 'bcrypt',                   '3.1.11'
 gem 'will_paginate',            '3.1.5'
 gem 'bootstrap-will_paginate',  '0.0.10'
+gem 'forest_liana',             '1.5.1'
 
 # Development & testing specific gems
 
@@ -48,5 +49,4 @@ end
 group :production do
   gem 'passenger',  '5.0.30'
   gem 'pg',         '0.19.0'
-  gem 'forest_liana'
 end
