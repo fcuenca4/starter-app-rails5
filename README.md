@@ -33,8 +33,11 @@ If you encounter any issues, please try to first fix it yourself, and then propo
 
 ## Todo's
 
- - Add gem(s) for writing tests
- - Write tests
+ - Write more tests
+
+ ## Thanks
+
+ Thanks to [Michael Hartl](https://github.com/mhartl) for his Rails Tutorial, a lot of this application is based on that
 
 ## License
 
