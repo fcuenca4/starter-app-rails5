@@ -8,6 +8,10 @@ Starter Application is a Ruby on Rails 5.1.1 template to use as a base for your 
 
 The starter application was developed using Rails 5.1.1, and Ruby 2.4.1. I make no guarantees, however I'm sure it can be adapted for use on other versions of Rails and Ruby.
 
+## Demo
+
+[Starter App for Rails 5.1.1 Demo](https://starter-app-rails5.herokuapp.com)
+
 ## Installation and use
 
 1. Clone it (`git clone https://github.com/professorNim/starter-app-rails5`)
