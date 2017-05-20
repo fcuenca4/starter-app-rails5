@@ -1,12 +1,12 @@
 # Starter Application
 
-Starter Application is a Ruby on Rails 5.0 template to use as a base for your new Rails applications. Ideally suitable for deployment on Heroku, but may be used elsewhere.
+Starter Application is a Ruby on Rails 5.1.1 template to use as a base for your new Rails applications. Ideally suitable for deployment on Heroku, but may be used elsewhere.
 
   - Clone repository or otherwise download source code and install gems
   - ???
   - Profit!
 
-The starter application was developed using Rails 5.0.0, and Ruby 2.3.1. I make no guarantees, however I'm sure it can be adapted for use on other versions of Rails and Ruby.
+The starter application was developed using Rails 5.1.1, and Ruby 2.4.1. I make no guarantees, however I'm sure it can be adapted for use on other versions of Rails and Ruby.
 
 ## Installation and use
 
@@ -36,7 +36,7 @@ If you encounter any issues, please try to first fix it yourself, and then propo
 
 The MIT License (MIT)
 
-Copyright (c) 2016 Steve Nims, sjnims@gmail.com
+Copyright (c) 2016 - 2017 Steve Nims, sjnims@gmail.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
