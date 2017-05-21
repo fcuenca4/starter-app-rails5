@@ -20,9 +20,6 @@ gem 'sass-rails',   '5.0.6'
 gem 'turbolinks',   '5.0.1'
 gem 'uglifier',     '3.2.0'
 
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data',  '1.2.3', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-
 # Project specific gems
 
 gem 'high_voltage',             '3.0.0'
