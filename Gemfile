@@ -13,7 +13,7 @@ gem 'rails',  '5.1.1'
 
 # Default Rails gems
 
-gem 'coffee-rails', '4.2.1'
+gem 'coffee-rails', '4.2.2'
 gem 'jbuilder',     '2.6.4'
 gem 'jquery-rails', '4.3.1'
 gem 'sass-rails',   '5.0.6'
