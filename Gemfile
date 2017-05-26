@@ -15,24 +15,26 @@ gem 'rails',  '5.1.1'
 
 gem 'coffee-rails', '4.2.2'
 gem 'jbuilder',     '2.6.4'
-gem 'jquery-rails', '4.3.1'
 gem 'sass-rails',   '5.0.6'
 gem 'turbolinks',   '5.0.1'
 gem 'uglifier',     '3.2.0'
 
 # Project specific gems
 
-gem 'high_voltage',             '3.0.0'
-gem 'bootstrap-sass',           '3.3.7'
 gem 'bcrypt',                   '3.1.11'
+gem 'bootstrap-sass',           '3.3.7'
+gem 'high_voltage',             '3.0.0'
+gem 'jquery-rails',             '4.3.1'
 gem 'will_paginate',            '3.1.5'
 gem 'bootstrap-will_paginate',  '1.0.0'
 
 # Development & testing specific gems
 
 group :development, :test do
-  gem 'byebug',   '9.0.6', platform: [:mri, :mingw, :x64_mingw]
-  gem 'sqlite3',  '1.3.13'
+  gem 'better_errors',      '2.1.1'
+  gem 'binding_of_caller',  '0.7.2'
+  gem 'byebug',             '9.0.6', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'sqlite3',            '1.3.13'
 end
 
 group :test do
