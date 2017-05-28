@@ -5,3 +5,11 @@
 <p>Welcome to the <%= Rails.application.config.application_name %>! Click on the link below to activate your account:</p>
 
 <%= link_to "Activate", edit_account_activation_url(@user.activation_token, email: @user.email) %>
+
+<p>Copy and paste to your browser's address bar if the URL isn't working.</p>
+
+<%= edit_account_activation_url(@user.activation_token, email: @user.email) %>
+
+<p>Thanks!</p>
+
+<p>The <%= Rails.application.config.application_name %> Team</p>
