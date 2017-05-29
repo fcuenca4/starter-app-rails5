@@ -20,7 +20,7 @@ inactive_user:
   activated: false
   activated_at:
 
-<% 31.times do |n| %>
+<% 32.times do |n| %>
 user_<%= n %>:
   email: <%= "user_#{n}@example.com" %>
   password_digest: <%= User.digest('password') %>
