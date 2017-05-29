@@ -1,11 +1,16 @@
 machine:
   timezone:
     America/New_York
+env:
+  CODECLIMATE_REPO_TOKEN: b0d860987fe4aaeace945232d7d55fb41ac3bf4584297490458d02a446a4a430
 dependencies:
   pre:
     - gem install bundler
   bundler:
     without: [production]
+test:
+  post:
+    - codeclimate-test-reporter
 deployment:
   staging:
     branch: master
