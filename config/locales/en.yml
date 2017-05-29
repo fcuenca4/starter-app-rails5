@@ -31,10 +31,12 @@
 
 en:
   labels:
+    edit_profile_submit: "Save Changes"
     log_in_submit: "Log in"
     remember_me: "Remember Me"
+    reset_password_submit: "Reset Password"
+    send_password_reset_email: "Send password reset email"
     sign_up_submit: "Sign Up"
-    edit_profile_submit: "Save Changes"
   placeholders:
     email: "Enter your email"
     password: "Enter your password"

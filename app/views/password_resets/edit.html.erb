@@ -1,0 +1,20 @@
+<% provide(:title, "Reset Password") %>
+<h1>Reset Password</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(@user, url: password_reset_path(params[:id]), html: { role: 'form' }) do |f| %>
+      <%= render 'shared/error_messages' %>
+
+      <%= hidden_field_tag :email, @user.email %>
+
+      <%= f.label :password %>
+      <%= f.password_field :password, autocomplete: "off", class: "form-control", placeholder: yield(:password_text) %>
+
+      <%= f.label :password_confirmation %>
+      <%= f.password_field :password_confirmation, autocomplete: "off", class: "form-control", placeholder: yield(:password_confirmation_text) %>
+
+      <%= f.submit I18n.t("labels.reset_password_submit"), class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
