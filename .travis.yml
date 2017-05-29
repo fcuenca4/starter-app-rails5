@@ -1,6 +1,0 @@
-language: ruby
-rvm:
-  - 2.4.1
-bundler_args: --without production
-#before_script: "bundle exec rails db:drop db:migrate RAILS_ENV=test"
-script: "bundle exec rails t"
