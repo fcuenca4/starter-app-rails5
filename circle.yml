@@ -1,9 +1,6 @@
+machine:
+  timezone:
+    America/New_York
 dependencies:
-  pre:
-    - gem install bundler
-
-test:
-  pre:
-    - bundle exec rails db:migrate
-  override:
-    - bundle exec rails t
+  bundler:
+    without: [production]
