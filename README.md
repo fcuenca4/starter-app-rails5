@@ -21,8 +21,8 @@ The starter application was developed using Rails 5.1.1, and Ruby 2.4.1. I make 
 
 ## Files to change before using in your own app
 
-1. config/environments/production.rb - specifically the mail settings (host, domain, etc...), as it stands this app is set up for Heroku and Sendgrid, change these settings as necessary
-2. config/initializers/app_defaults.rb - this file contains two variables - application_name & application_creator - used in various places, namely page titles, emails, and the footer partial - change to suit your needs
+1. `config/environments/production.rb` - specifically the mail settings (host, domain, etc...), as it stands this app is set up for Heroku and Sendgrid, change these settings as necessary
+2. `config/initializers/app_defaults.rb` - this file contains two variables - application_name & application_creator - used in various places, namely page titles, emails, and the footer partial - change to suit your needs
 
 
 ## Contributing
@@ -67,4 +67,4 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+SOFTWARE.-am
