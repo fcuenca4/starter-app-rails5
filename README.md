@@ -7,7 +7,7 @@ Starter Application is a Ruby on Rails 5.1.1 template to use as a base for your 
   - ???
   - Profit!
 
-The starter application was developed using Rails 5.1.1, and Ruby 2.4.1. I make no guarantees, however I'm sure it can be adapted for use on other versions of Rails and Ruby.
+The starter application was developed using Rails 5.1.1, and Ruby 2.4.1. I make no guarantees, however I'm sure it can be adapted for use on other versions of Rails and Ruby. It is set up to use [CircleCI](https://circleci.com) with automatic deployment to [Heroku](https://www.heroku.com). Code quality is measured on [Code Climate](https://codeclimate.com), with test coverage collected by the [SimpleCov](https://github.com/colszowka/simplecov) gem. Change to adapt to your own needs.
 
 ## Demo
 
@@ -24,7 +24,7 @@ The starter application was developed using Rails 5.1.1, and Ruby 2.4.1. I make 
 
 1. `config/environments/production.rb` - specifically the mail settings (host, domain, etc...), as it stands this app is set up for Heroku and Sendgrid, change these settings as necessary
 2. `config/initializers/app_defaults.rb` - this file contains two variables - application_name & application_creator - used in various places, namely page titles, emails, and the footer partial - change to suit your needs
-
+3. `circle.yml` - optionally replace my code climate test coverage token for this repository
 
 ## Contributing
 
