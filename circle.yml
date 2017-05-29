@@ -10,7 +10,7 @@ dependencies:
     without: [production]
 test:
   post:
-    - codeclimate-test-reporter
+    - bundle exec codeclimate-test-reporter
 deployment:
   staging:
     branch: master
