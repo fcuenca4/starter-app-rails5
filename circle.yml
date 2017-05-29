@@ -6,3 +6,8 @@ dependencies:
     - gem install bundler
   bundler:
     without: [production]
+deployment:
+  staging:
+    branch: master
+    heroku:
+      appname: starter-app-rails5
