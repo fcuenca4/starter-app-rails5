@@ -18,7 +18,7 @@ The starter application was developed using Rails 5.1.1, and Ruby 2.4.1. I make 
 
 1. Clone it (`git clone https://github.com/professorNim/starter-app-rails5`)
 2. Bundle it (`bundle install`)
-3. Run migration (`rails db:migrate`), optionally seed the development database (`rails db:seed`)
+3. Migrate it (`rails db:migrate`), optionally seed the development database (`rails db:seed`)
 4. Develop your application
 
 ## Files to change before using in your own app
