@@ -13,6 +13,12 @@ class PasswordResetsController < ApplicationController
       @user.send_password_reset_email
       flash[:info] = "Email sent with password reset instructions"
       redirect_to root_path
+    elsif params[:password_reset][:email].empty?
+      flash.now[:danger] = "Email address can't be empty"
+      render 'new'
+    elsif params[:password_reset][:email] !~ /\A[\w+\-.]+@[a-z\d\-]+(?:\.[a-z\d\-]+)*\.[a-z]+\z/i
+      flash.now[:danger] = "Email address incorrectly formatted"
+      render 'new'
     else
       flash.now[:danger] = "Email address not found"
       render 'new'

@@ -10,10 +10,30 @@ class PasswordResetsTest < ActionDispatch::IntegrationTest
   test "password resets" do
     get new_password_reset_path
     assert_template 'password_resets/new'
-    # Invalid email
+    # Empty Email
     post password_resets_path, params: { password_reset: { email: "" } }
     assert_not flash.empty?
     assert_template 'password_resets/new'
+    assert_select "div.alert"
+    assert_select "div.alert-danger"
+    assert_select "button.close"
+    assert_select "div#flash_danger", "Email address can't be empty"
+    # Incorrectly formatted email
+    post password_resets_path, params: { password_reset: { email: "foo@bar" } }
+    assert_not flash.empty?
+    assert_template 'password_resets/new'
+    assert_select "div.alert"
+    assert_select "div.alert-danger"
+    assert_select "button.close"
+    assert_select "div#flash_danger", "Email address incorrectly formatted"
+    # Email not found
+    post password_resets_path, params: { password_reset: { email: "foo@bar.com" } }
+    assert_not flash.empty?
+    assert_template 'password_resets/new'
+    assert_select "div.alert"
+    assert_select "div.alert-danger"
+    assert_select "button.close"
+    assert_select "div#flash_danger", "Email address not found"
     # Valid email
     post password_resets_path, params: { password_reset: { email: @user.email } }
     assert_not_equal @user.reset_digest, @user.reload.reset_digest

@@ -1,6 +1,6 @@
 # Initialize simplecov code coverage gem
 require 'simplecov'
-SimpleCov.start
+SimpleCov.start 'rails'
 
 # Core Rails minitest initialization
 ENV['RAILS_ENV'] ||= 'test'
