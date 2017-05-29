@@ -16,14 +16,20 @@ The starter application was developed using Rails 5.1.1, and Ruby 2.4.1. I make 
 
 1. Clone it (`git clone https://github.com/professorNim/starter-app-rails5`)
 2. Bundle it (`bundle install`)
-3. Run migration (`rails db:migrate`)
+3. Run migration (`rails db:migrate`), optionally seed the development database (`rails db:seed`)
 4. Develop your application
+
+## Files to change before using in your own app
+
+1. config/environments/production.rb - specifically the mail settings (host, domain, etc...), as it stands this app is set up for Heroku and Sendgrid, change these settings as necessary
+2. config/initializers/app_defaults.rb - this file contains two variables - application_name & application_creator - used in various places, namely page titles, emails, and the footer partial - change to suit your needs
+
 
 ## Contributing
 
 1. Fork it (https://github.com/professornim/starter-app-rails5/fork)
 2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
+3. Commit your changes (`git commit -am 'Added a new feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
 
@@ -33,11 +39,11 @@ If you encounter any issues, please try to first fix it yourself, and then propo
 
 ## Todo's
 
- - Write more tests
+- Write more tests, particularly around pagination, account activation, password recovery, and user profile pages
 
- ## Thanks
+## Thanks
 
- Thanks to [Michael Hartl](https://github.com/mhartl) for his Rails Tutorial, a lot of this application is based on that
+Thanks to [Michael Hartl](https://github.com/mhartl) for his Rails Tutorial, a lot of this application is based on that
 
 ## License
 
