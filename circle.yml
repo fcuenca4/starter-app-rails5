@@ -2,5 +2,7 @@ machine:
   timezone:
     America/New_York
 dependencies:
+  pre:
+    - gem install bundler
   bundler:
     without: [production]
