@@ -1,6 +1,5 @@
 # Starter Application
-[![Build Status](https://travis-ci.org/professorNim/starter-app-rails5.svg?branch=master)](https://travis-ci.org/professorNim/starter-app-rails5)
-
+[![CircleCI](https://img.shields.io/circleci/project/github/professorNim/starter-app-rails5.svg)](https://circleci.com/gh/professorNim/starter-app-rails5/tree/master)
 Starter Application is a Ruby on Rails 5.1.1 template to use as a base for your new Rails applications. Ideally suitable for deployment on Heroku, but may be used elsewhere.
 
   - Clone repository or otherwise download source code and install gems
